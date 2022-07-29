@@ -1,6 +1,5 @@
 package com.tcl.mybatis.test;
 
-import com.sun.xml.internal.ws.api.model.wsdl.WSDLOutput;
 import com.tcl.mybatis.mapper.UserMapper;
 import com.tcl.mybatis.pojo.User;
 import com.tcl.mybatis.utils.SqlSessionUtil;

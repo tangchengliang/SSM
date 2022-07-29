@@ -3,9 +3,16 @@
         PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-config.dtd">
 <configuration>
-
+    
+    <settings>
+        <!-- 将下划线映射为驼峰 -->
+        <setting name="mapUnderscoreToCamelCase" value="true"/>
+        <!-- 开启延时加载 -->
+        <setting name="lazyLoadingEnabled" value="true"/>
+        <setting name="aggressiveLazyLoading" value="false"/>
+    </settings>
+    
     <typeAliases>
-<!--        <typeAlias type="com.tcl.mybatis.pojo.User" alias="new_name"></typeAlias>-->
         <package name="com.tcl.mybatis.pojo"/>
     </typeAliases>
     <!--设置连接数据库的环境-->
@@ -23,13 +30,6 @@
 
     <!--引入映射文件-->
     <mappers>
-        <!--通过 resource 一次加载一个配置文件 -->
-<!--        <mapper resource="mappers/UserMapper.xml"/>-->
-        <!--通过 package 批量加载配置文件
-            要求：
-                1、mapper接口所在的包要和映射文件所在的包一致
-                2、mapper接口要和映射文件的名字一致
-         -->
         <package name="com.tcl.mybatis.mapper"/>
     </mappers>
 </configuration>

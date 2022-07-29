@@ -5,7 +5,6 @@
 <configuration>
 
     <typeAliases>
-<!--        <typeAlias type="com.tcl.mybatis.pojo.User" alias="new_name"></typeAlias>-->
         <package name="com.tcl.mybatis.pojo"/>
     </typeAliases>
     <!--设置连接数据库的环境-->
@@ -23,13 +22,6 @@
 
     <!--引入映射文件-->
     <mappers>
-        <!--通过 resource 一次加载一个配置文件 -->
-<!--        <mapper resource="mappers/UserMapper.xml"/>-->
-        <!--通过 package 批量加载配置文件
-            要求：
-                1、mapper接口所在的包要和映射文件所在的包一致
-                2、mapper接口要和映射文件的名字一致
-         -->
         <package name="com.tcl.mybatis.mapper"/>
     </mappers>
 </configuration>

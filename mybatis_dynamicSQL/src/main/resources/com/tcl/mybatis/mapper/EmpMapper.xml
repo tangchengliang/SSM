@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.tcl.mybatis.mapper.EmpMapper">
+
+    <resultMap id="empResultMap" type="emp">
+        <id column="emp_id" property="empId"></id>
+        <result column="emp_name" property="empName"></result>
+        <result column="age" property="age"></result>
+        <result column="gender" property="gender"></result>
+    </resultMap>
+
+    <select id="getEmpByEmpId" resultMap="empResultMap">
+        select * from t_emp where emp_id = #{empId}
+        <!--select emp_id empId, emp_name empName, age, gender from t_emp where emp_id = #{empId}-->
+    </select>
+
+    <select id="getEmpByEmpIdOld" resultType="Emp">
+        select * from t_emp where emp_id = #{empId}
+        <!--select emp_id empId, emp_name empName, age, gender from t_emp where emp_id = #{empId}-->
+    </select>
+
+
+    <!-- 处理多对1的方式
+        （1）级联
+        -->
+    <resultMap id="empAndDeptResultMapOne" type="Emp">
+        <id column="emp_id" property="empId"></id>
+        <result column="emp_name" property="empName"></result>
+        <result column="age" property="age"></result>
+        <result column="gender" property="gender"></result>
+        <result column="dept_id" property="dept.deptId"></result>
+        <result column="dept_name" property="dept.deptName"></result>
+    </resultMap>
+
+    <!-- 处理多对1的方式
+     （2）association
+     -->
+    <resultMap id="empAndDeptResultMap" type="Emp">
+        <id column="emp_id" property="empId"></id>
+        <result column="emp_name" property="empName"></result>
+        <result column="age" property="age"></result>
+        <result column="gender" property="gender"></result>
+        <association property="dept" javaType="Dept">
+            <id column="dept_id" property="deptId"></id>
+            <result column="dept_name" property="deptName"></result>
+        </association>
+
+    </resultMap>
+
+    <select id="getEmpAndDeptByEmpId" resultMap="empAndDeptResultMap">
+        select *
+        from t_emp
+        left join t_dept on t_emp.dept_id = t_dept.dept_id
+        where t_emp.emp_id = #{empId}
+    </select>
+
+
+    <!-- 处理多对1的方式
+    （3）分步查询
+    -->
+    <resultMap id="empAndDeptStepResultMap" type="Emp">
+        <id column="emp_id" property="empId"></id>
+        <result column="emp_name" property="empName"></result>
+        <result column="age" property="age"></result>
+        <result column="gender" property="gender"></result>
+        <association property="dept" fetchType="eager"
+                     select="com.tcl.mybatis.mapper.DeptMapper.getEmpAndDeptByStepTwo"
+                     column="dept_id"></association>
+
+    </resultMap>
+    <select id="getEmpAndDeptByStepOne" resultMap="empAndDeptStepResultMap">
+        select * from t_emp where emp_id = #{empId}
+    </select>
+
+
+    <select id="getDeptAndEmpByDeptIdStepTwo" resultType="emp">
+        select * from t_emp where dept_id = #{deptId}
+    </select>
+</mapper>

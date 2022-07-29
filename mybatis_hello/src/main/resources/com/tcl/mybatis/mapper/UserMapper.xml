@@ -28,7 +28,7 @@
         select * from t_user where id = 3
     </select>
     
-    <select id="getAllUser" resultType="com.tcl.mybatis.pojo.User">
+    <select id="getAllUser" resultType="User">
         select * from t_user
     </select>
 </mapper>

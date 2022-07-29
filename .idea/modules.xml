@@ -3,7 +3,10 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/SSM.iml" filepath="$PROJECT_DIR$/SSM.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mybatis_dynamicSQL/mybatis_dynamicSql.iml" filepath="$PROJECT_DIR$/mybatis_dynamicSQL/mybatis_dynamicSql.iml" />
       <module fileurl="file://$PROJECT_DIR$/mybatis_hello/mybatis_hello.iml" filepath="$PROJECT_DIR$/mybatis_hello/mybatis_hello.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mybatis_parameter/mybatis_parameter.iml" filepath="$PROJECT_DIR$/mybatis_parameter/mybatis_parameter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mybatis_resultMap/mybatis_resultMap.iml" filepath="$PROJECT_DIR$/mybatis_resultMap/mybatis_resultMap.iml" />
     </modules>
   </component>
 </project>
