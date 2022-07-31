@@ -1,10 +1,12 @@
 package com.tcl.mybatis.pojo;
 
+import java.io.Serializable;
+
 /**
  * @author tcl
  * @date 2022-07-28 14:58
  */
-public class Emp {
+public class Emp implements Serializable {
 
     private Integer empId;
     private String empName;

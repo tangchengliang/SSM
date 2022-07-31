@@ -58,7 +58,7 @@ public class ResultMapTest {
     public void getDeptAndEmpByDeptIdStep(){
         SqlSession sqlSession = SqlSessionUtil.getSqlSession();
         DeptMapper mapper = sqlSession.getMapper(DeptMapper.class);
-        Dept dept = mapper.getDeptAndEmpByDeptIdStepOne(1);
+        Dept dept = mapper.getDeptAndEmpByDeptIdStepOne(2);
         System.out.println(dept);
 
         sqlSession.close();
