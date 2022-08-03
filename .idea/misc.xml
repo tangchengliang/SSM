@@ -8,6 +8,9 @@
         <option value="$PROJECT_DIR$/mybatis_resultMap/pom.xml" />
         <option value="$PROJECT_DIR$/mybatis_dynamicSQL/pom.xml" />
         <option value="$PROJECT_DIR$/mybatis_mbg/pom.xml" />
+        <option value="$PROJECT_DIR$/spring_hello/pom.xml" />
+        <option value="$PROJECT_DIR$/spring_ioc_xml/pom.xml" />
+        <option value="$PROJECT_DIR$/spring_annotation/pom.xml" />
       </list>
     </option>
   </component>

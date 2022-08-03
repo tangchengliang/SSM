@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="studentOne" class="com.tcl.spring.pojo.Student">
+        <!-- setter注入-->
+        <property name="sid" value="202022"></property>
+        <property name="age" value="20"></property>
+        <property name="gender" >
+            <null />
+        </property>
+        <property name="sname" value="张三"></property>
+        <!-- 构造器注入-->
+<!--        <constructor-arg value="1002" index="0"></constructor-arg>-->
+<!--        <constructor-arg value="李四"></constructor-arg>-->
+<!--        <constructor-arg value="33"></constructor-arg>-->
+<!--        <constructor-arg value="女" name="gender"></constructor-arg>-->
+
+    </bean>
+</beans>
