@@ -12,8 +12,11 @@
         <module name="mybatis_mbg" />
         <module name="mybatis_hello" />
         <module name="spring_annotation" />
+        <module name="spring-transaction" />
         <module name="mybatis_dynamicSql" />
         <module name="spring_hello" />
+        <module name="spring_proxy" />
+        <module name="spring-aop" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -23,9 +26,12 @@
       <module name="mybatis_mbg" target="8" />
       <module name="mybatis_parameter" target="8" />
       <module name="mybatis_resultMap" target="8" />
+      <module name="spring-aop" target="1.5" />
+      <module name="spring-transaction" target="1.5" />
       <module name="spring_annotation" target="1.5" />
       <module name="spring_hello" target="1.5" />
       <module name="spring_ioc_xml" target="1.5" />
+      <module name="spring_proxy" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>
