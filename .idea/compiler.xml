@@ -6,16 +6,19 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="mybatis_resultMap" />
-        <module name="mybatis_parameter" />
-        <module name="spring_ioc_xml" />
-        <module name="mybatis_mbg" />
-        <module name="mybatis_hello" />
-        <module name="spring_annotation" />
         <module name="spring-transaction" />
-        <module name="mybatis_dynamicSql" />
-        <module name="spring_hello" />
+        <module name="mybatis_parameter" />
+        <module name="spring_annotation" />
+        <module name="spring_mvc_demo" />
+        <module name="mybatis_mbg" />
         <module name="spring_proxy" />
+        <module name="spring_hello" />
+        <module name="mybatis_hello" />
+        <module name="mybatis_resultMap" />
+        <module name="ssm" />
+        <module name="spring_mvc_hello" />
+        <module name="mybatis_dynamicSql" />
+        <module name="spring_ioc_xml" />
         <module name="spring-aop" />
       </profile>
     </annotationProcessing>
@@ -31,7 +34,10 @@
       <module name="spring_annotation" target="1.5" />
       <module name="spring_hello" target="1.5" />
       <module name="spring_ioc_xml" target="1.5" />
+      <module name="spring_mvc_demo" target="1.5" />
+      <module name="spring_mvc_hello" target="1.5" />
       <module name="spring_proxy" target="1.5" />
+      <module name="ssm" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>

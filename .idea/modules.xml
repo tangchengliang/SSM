@@ -13,7 +13,10 @@
       <module fileurl="file://$PROJECT_DIR$/spring_annotation/spring_annotation.iml" filepath="$PROJECT_DIR$/spring_annotation/spring_annotation.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring_hello/spring_hello.iml" filepath="$PROJECT_DIR$/spring_hello/spring_hello.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring_ioc_xml/spring_ioc_xml.iml" filepath="$PROJECT_DIR$/spring_ioc_xml/spring_ioc_xml.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring_mvc_demo/spring_mvc_demo.iml" filepath="$PROJECT_DIR$/spring_mvc_demo/spring_mvc_demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring_mvc_hello/spring_mvc_hello.iml" filepath="$PROJECT_DIR$/spring_mvc_hello/spring_mvc_hello.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring_proxy/spring_proxy.iml" filepath="$PROJECT_DIR$/spring_proxy/spring_proxy.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ssm/ssm.iml" filepath="$PROJECT_DIR$/ssm/ssm.iml" />
     </modules>
   </component>
 </project>

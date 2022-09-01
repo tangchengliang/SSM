@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>index</title>
+</head>
+<body>
+    hello world!!!<br>
+    /解析的路径：表示绝对路径，即的当前工程的上下文路径: localhost:8080/springMVC/<br>
+    <a th:href="@{/hello}">测试SpringMVC</a><br>
+    <a href="/hello">测试绝对路径</a><br>
+<hr>
+    hr 创建一条水平线
+    <form th:action="@{/param/servletAPI}" method="post">
+        用户名：<input type="text" name="username"><br>
+        密码：<input type="password" name="password"><br>
+        <input type="submit" value="登录"><br>
+    </form>
+
+    hr 创建一条水平线
+    <form th:action="@{/param}" method="post">
+        用户名：<input type="text" name="name"><br>
+        密码：<input type="password" name="pass"><br>
+        <input type="submit" value="登录"><br>
+    </form>
+
+    pojo获取参数<br>
+    <form th:action="@{/param/pojo}" method="post">
+        ID：<input type="text" name="id"><br>
+        用户名：<input type="text" name="username"><br>
+        密码：<input type="password" name="password"><br>
+        <input type="submit">
+    </form>
+
+
+</body>
+</html>
